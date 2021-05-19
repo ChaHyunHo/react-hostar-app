@@ -13,6 +13,8 @@ Languages & frameWorks > javascript > prettier ,ESlint
 
 모듈이 셋팅이 되어있지 않으면 사용할 수 없다. 
 
+npm i prettier -D -E
+
 ~~~
 
 ## useEffect
