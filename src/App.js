@@ -26,7 +26,7 @@ import Average from "./Average";
 
 function App() {
   return (
-      <Average/>
+      <InfoReducer/>
   );
 }
 

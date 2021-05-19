@@ -1,27 +1,25 @@
 import React, {useEffect, useReducer, useState} from "react";
+import useInputs from "./useInputs";
 
-function reducer(state, action) {
-    console.log("=====reducer=======")
-    console.log(state);
-    console.log(action); // input tag
-    console.log("===================")
-  return {
-      ...state,
-      [action.name] : action.value
-  };
-}
+// useInputs 생성 후 주석함
+// function reducer(state, action) {
+//     console.log("=====reducer=======")
+//     console.log(state);
+//     console.log(action); // input tag
+//     console.log("===================")
+//   return {
+//       ...state,
+//       [action.name] : action.value
+//   };
+// }
 
 var InfoReducer = () => {
-  const [state, dispatch] = useReducer(reducer, {
+  const [state, onChange] = useInputs({
       name: '',
       nickname : ''
   });
 
   const {name, nickname} = state;
-
-  const onChange = e => {
-      dispatch(e.target);
-  }
 
   return (
     <div>
