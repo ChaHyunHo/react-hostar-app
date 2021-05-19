@@ -14,3 +14,10 @@ Languages & frameWorks > javascript > prettier ,ESlint
 모듈이 셋팅이 되어있지 않으면 사용할 수 없다. 
 
 ~~~
+
+## useEffect
+
+~~~
+리액트 컴포넌트가 랜더링될 때마다 특정 작업을 수행하도록 설정할 수 있는 Hook이다.
+*componentDidMount , *componentDidUpdate를 합친 형태
+~~~
